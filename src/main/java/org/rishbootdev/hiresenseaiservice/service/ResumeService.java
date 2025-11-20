@@ -42,9 +42,7 @@ public class ResumeService {
                 Extract structured resume information from the text below.
                 Return JSON strictly matching the ResumeResponse DTO shape.
                 Use empty arrays for lists when nothing is found and null for absent objects.
-
                 %s
-
                 Resume text:
                 ~~~
                 %s
