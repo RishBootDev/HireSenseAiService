@@ -128,23 +128,18 @@ public class ResumeService {
 
             String prompt = """
                 You are an expert resume evaluator.
-
                 Task:
                 Compare the job-required skills with the candidate's resume skills.
-
                 Required Output Format (IMPORTANT):
                 %s
-
                 Rules:
                 - `score` must be an integer between 0 and 100.
                 - `matchedSkills` = skills appearing in both lists.
                 - `missingSkills` = skills from jobSkillsCsv that are NOT in resumeSkills.
                 - Treat skill names case-insensitively.
                 - Do NOT hallucinate skills that are not provided.
-
                 Job Skills (CSV):
                 %s
-
                 Resume Skills (List):
                 %s
                 """.formatted(
