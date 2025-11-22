@@ -22,7 +22,7 @@ public class ResumeService {
 
     private final PdfService pdfService;
     private final ChatClient chatClient;
-    private final ObjectMapper objectMapper = new ObjectMapper();
+    private final ObjectMapper objectMapper;
 
     private final BeanOutputConverter<ResumeResponse> converter = new BeanOutputConverter<>(ResumeResponse.class);
 
